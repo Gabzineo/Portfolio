@@ -2,14 +2,14 @@ import styled from "styled-components"
 
 
 export const Card = styled.div`
-    border: 1px solid #C1C1C1;
-    padding: 16px
+    border: 1px solid ${(props) => props.theme.corDaBorda};
+    padding: 16px;
 `
 
 export const LinkBotaum = styled.a`
-    color: #fff;
+    color: ${props => props.theme.corDeFundo};
     font-fize: 14px;
-    background-color: #4476BF;
+    background-color: ${props => props.theme.corDeFundoBotao};
     text-decoration: none;
     padding: 8px;
     display: inline-block;
